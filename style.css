@@ -1,0 +1,33 @@
+/* Base Styles */
+
+:root {
+  --prm-blue: hsl(223, 87%, 63%);
+  --sec-pale-blue: hsl(223, 100%, 88%);
+  --sec-light-red: hsl(354, 100%, 66%);
+  --neutral-gray: hsl(0, 0%, 59%);
+  --very-dark-blue: hsl(209, 33%, 12%);
+}
+
+html {
+  font-size: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  line-height: 1.3;
+  font-size: 1.25rem;
+  font-family: 'Libre Franklin', sans-serif;
+  color: var(--prm-blue)
+}
+
+.notify {
+display: flex;
+}
