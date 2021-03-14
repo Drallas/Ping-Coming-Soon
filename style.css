@@ -36,11 +36,16 @@ body {
   color: var(--prm-blue);
 }
 
+.main {
+    text-align: center;
+}
+
 h1 {
     color: var(--very-dark-blue);
     font-size: 1.5rem;
 }
 
+/* Header Section */
 h2 {
     font-weight: 300;
     color: var(--neutral-gray);
@@ -56,16 +61,25 @@ h1 span {
     color: var(--prm-blue);
 }
 
-
-.main {
-    text-align: center;
-    
+.header p {
+    color: var(--very-dark-blue);
+    font-weight: 300;
+    font-size: 0.95rem;
 }
+
+
+/* Form Section */
+
+
+
+
+/* dashboard Image Section */
 
 .dashboard__image {
     max-width: 21rem;
     margin-bottom: 7.5rem;
 }
+
 
 /* Footer section */
 
