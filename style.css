@@ -1,3 +1,8 @@
+/* Helper CSS */
+/* .header, .footer, section, .form {
+    border: 0.5px solid red;
+} */
+
 /* Base Styles */
 
 :root {
@@ -5,6 +10,7 @@
   --sec-pale-blue: hsl(223, 100%, 88%);
   --sec-light-red: hsl(354, 100%, 66%);
   --neutral-gray: hsl(0, 0%, 59%);
+  --border-gray: hsl(0, 0%, 90%);
   --very-dark-blue: hsl(209, 33%, 12%);
   --body-font: 'Libre Franklin', sans-serif;
 }
@@ -30,29 +36,65 @@ body {
   color: var(--prm-blue);
 }
 
-/* .header, .footer, section, .form {
-    border: 0.5px solid red;
-} */
+h1 {
+    color: var(--very-dark-blue);
+    font-size: 1.5rem;
+}
+
+h2 {
+    font-weight: 300;
+    color: var(--neutral-gray);
+    opacity: 0.75;
+}
+
+h2 .soon {
+    font-weight: 700;
+    color: var(--very-dark-blue);
+}
+
+h1 span {
+    color: var(--prm-blue);
+}
+
 
 .main {
     text-align: center;
     
 }
 
-.footer img {
-    width: 2rem;
-    color: var(--prm-blue);
-}
-
-.footer p {
-    color: var(--neutral-gray);
-    font-size: 0.75rem;
-}
-
 .dashboard__image {
     max-width: 21rem;
+    margin-bottom: 7.5rem;
 }
 
-.social-images {
-    filter: invert(50%) sepia(84%) saturate(3278%) hue-rotate(206deg) brightness(97%) contrast(96%);
+/* Footer section */
+
+.footer {
+    color: var(--neutral-gray)
 }
+
+.footer__images-container   {
+    display: flex;
+    justify-content: center;
+}
+
+.footer__image-container {
+    border: 1px solid var(--border-gray);
+    width:  2rem;
+    height: 2rem;
+    border-radius: 50%;
+    margin: 0 6px
+}
+
+.footer__social-image {
+    filter: invert(50%) sepia(84%) saturate(3278%) hue-rotate(206deg) brightness(97%) contrast(96%);
+    vertical-align: middle;
+    width: 60%;
+    height: 60%;
+    margin: 0 auto;
+}
+
+    .footer p {
+    font-size: 0.75rem;
+    opacity: 0.5;
+    }
