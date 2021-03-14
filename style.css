@@ -36,15 +36,16 @@ body {
     text-align: center;
 }
 
+/* Header Section */
+
+.header {
+    margin-bottom: 2.5rem;
+}
+
 h1 {
     color: var(--very-dark-blue);
     font-size: 1.5rem;
     margin-bottom: 2rem;
-}
-
-/* Header Section */
-.header {
-    margin-bottom: 2.5rem;
 }
 
 h2 {
@@ -69,6 +70,19 @@ h1 span {
     font-size: 0.95rem;
 }
 
+@media (min-width: 575px) {
+    h1 {
+        font-size: 2.2rem;
+    }
+    h2 {
+        font-size: 3rem;
+    }
+    .header p {
+        font-size: 1.9rem;
+        opacity: 0.6;
+    }
+}
+
 
 /* Form Section */
 .form {
@@ -83,7 +97,7 @@ h1 span {
     border-color:var(--sec-pale-blue);
     border-radius: 1.25rem;
     padding: 10px 0px 10px 2rem;
-    margin-bottom: 0.625rem;
+    
     opacity: 0.4;
 }
 
@@ -99,36 +113,70 @@ h1 span {
     font-weight: 300;
 }
 
+.form-control small {
+    display: block;
+    font-size: 0.6rem;
+    font-style: italic;
+    color: var(--sec-light-red);
+    bottom: 0;
+    left: 0;
+    margin-top: 0.25rem;
+    margin-bottom: 1.5rem;
+    opacity: 0.6;
+    visibility: hidden;
+    
+}
+
+/* If .form-control has error class atached */
+.form-control.error input {
+    border-color: var(--sec-light-red) ;
+}
+
+.form-control.error small {
+    visibility: visible;
+}
+
 input:focus {
     outline: none;
 }
 
 
-@media (min-width: 30rem) {
+@media (min-width: 575px) {
     .form {
         display: flex;
         justify-content: center;
     }
 
     .form__email {
-        width: 13.06rem;
-        height:1.875rem;
+        width: 23.125rem;
+        height:3.5rem;
         font-size: 0.5rem;
+        border-radius: 2.5rem;
     }
 
     .form__button {
-        width: 6.25rem;
-        height:1.875rem;
+        width: 12.68rem;
+        height:3.5rem;
         font-size: 0.5rem;
+        border-radius: 2.5rem;
         margin-left: 0.5rem;
         padding: 0.35rem;
     }
    }
 
 /* dashboard Image Section */
-.dashboard__image {
-    max-width: 21rem;
+.dashboard {
     margin-bottom: 7.5rem;
+}
+
+.dashboard__image {
+    width: 20rem;
+}
+
+@media (min-width: 575px) {
+    .dashboard__image {
+    width: 40rem;
+}
 }
 
 
@@ -147,6 +195,16 @@ input:focus {
     margin-bottom: 1.5rem;
 }
 
+.social__image-container:hover{
+    background-color: var(--prm-blue);
+}
+
+/* Select the child items on hover too */
+.social__image-container:hover .social__social-image {
+    filter: invert(99%) sepia(1%) saturate(0%) hue-rotate(258deg) brightness(114%) contrast(100%);
+}
+
+
 .social__social-image {
     filter: invert(50%) sepia(84%) saturate(3278%) hue-rotate(206deg) brightness(97%) contrast(96%);
     vertical-align: middle;
@@ -154,6 +212,8 @@ input:focus {
     height: 60%;
     margin: 0 auto;
 }
+
+
 
 .copyright {
     width: 100%;
