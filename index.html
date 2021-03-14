@@ -27,10 +27,10 @@
 
     <!-- Form Section -->
     <form>
-    <div class="form">
-          <div><input class="form__email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" type="text" placeholder="Your email adress..."  oninvalid="setCustomValidity('Please provide a valid email address')" />
+    <div id="form" class="form">
+          <div><input class="form__email" type="text"  id="email" placeholder="Your email adress..." />
 </div>
-          <div><button type="submit" class="form__button">Notify Me </button></div>
+          <div><button type="submit" class="form__button" onclick='Javascript:checkEmail();'>Notify Me </button></div>
     </div>
     </form>
 
@@ -61,11 +61,10 @@
 
  </main>
 
-  <!-- Load Script -->
-  <script src="script.js"></script>
+
 </body>
 
-</html>
+<!-- Load Script -->
+<script src="script.js">  </script>
 
-<!--           
-           -->
+</html>
