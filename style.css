@@ -1,10 +1,4 @@
-/* Helper CSS */
-/* .header, .footer, section, .form {
-    border: 0.5px solid red;
-} */
-
-/* Base Styles */
-
+/* Variables */
 :root {
   --prm-blue: hsl(223, 87%, 63%);
   --sec-pale-blue: hsl(223, 100%, 88%);
@@ -15,6 +9,7 @@
   --body-font: 'Libre Franklin', sans-serif;
 }
 
+/* Reset */
 html {
   font-size: 100%;
   -webkit-box-sizing: border-box;
@@ -26,6 +21,7 @@ html {
           box-sizing: inherit;
 }
 
+/* Main Styles */
 body {
   min-width: 25.875rem;
   margin: 5.3125rem auto;
@@ -75,7 +71,6 @@ h1 span {
 
 
 /* Form Section */
-
 .form {
     display: inline-block;
     margin-bottom: 3.5rem;
@@ -108,6 +103,7 @@ input:focus {
     outline: none;
 }
 
+
 @media (min-width: 30rem) {
     .form {
         display: flex;
@@ -124,13 +120,12 @@ input:focus {
         width: 6.25rem;
         height:1.875rem;
         font-size: 0.5rem;
-        margin-left: 1rem;
+        margin-left: 0.5rem;
         padding: 0.35rem;
     }
    }
 
 /* dashboard Image Section */
-
 .dashboard__image {
     max-width: 21rem;
     margin-bottom: 7.5rem;
@@ -138,7 +133,6 @@ input:focus {
 
 
 /* Social Icons Section */
-
 .social__images-container   {
     display: flex;
     justify-content: center;

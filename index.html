@@ -28,8 +28,7 @@
     <!-- Form Section -->
     <form>
     <div class="form">
-        
-          <div><input class="form__email" id="email" type="text" placeholder="Your email adress..." />
+          <div><input class="form__email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" type="text" placeholder="Your email adress..."  oninvalid="setCustomValidity('Please provide a valid email address')" />
 </div>
           <div><button type="submit" class="form__button">Notify Me </button></div>
     </div>
