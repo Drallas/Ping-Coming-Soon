@@ -31,12 +31,12 @@ Users should be able to:
 
 ### Screenshot
 
-![screenshot](screenshot.png)
+![screenshot](/images/screenshot.png)
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://github.com/Drallas/Ping-Coming-Soon)
-- Live Site URL: [Add live site URL here](https://drallas.github.io/Ping-Coming-Soon/)
+- Solution URL: [GitHub](https://github.com/Drallas/Ping-Coming-Soon)
+- Live Site URL: [GitHub Pages](https://drallas.github.io/Ping-Coming-Soon/)
 
 ## My process
 This site is built with a Mobile First approach, using VSCode and Adobe XD to look at the provided design templates.
