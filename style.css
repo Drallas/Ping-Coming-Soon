@@ -78,7 +78,7 @@ h1 span {
         font-size: 3rem;
     }
     .header p {
-        font-size: 1.9rem;
+        font-size: 1.5rem;
         opacity: 0.6;
     }
 }
@@ -150,14 +150,14 @@ input:focus {
     .form__email {
         width: 23.125rem;
         height:3.5rem;
-        font-size: 0.5rem;
+        font-size: 1rem;
         border-radius: 2.5rem;
     }
 
     .form__button {
         width: 12.68rem;
         height:3.5rem;
-        font-size: 0.5rem;
+        font-size: 1rem;
         border-radius: 2.5rem;
         margin-left: 0.5rem;
         padding: 0.35rem;
@@ -175,7 +175,8 @@ input:focus {
 
 @media (min-width: 43.75rem) {
     .dashboard__image {
-    width: 40rem;
+    width: 50%;
+    max-width: 40rem;
 }
 }
 
